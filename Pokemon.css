@@ -1,0 +1,94 @@
+/* Pokemon.css */
+
+/* Container for the whole application */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  /* Search input styles */
+  .search {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .search input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Grid layout for Pokemon cards */
+  .grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in a row */
+    gap: 20px; /* space between cards */
+  }
+  
+  /* Individual Pokemon card styles */
+  .card-content {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.2s;
+    padding: 10px;
+  }
+  
+  .card-content:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-content figure {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-content img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .card-content .typeofpokemon {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .card-content .typeofpokemon h3 {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .card-content .card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .card-content .card-description {
+    font-size: 1em;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
